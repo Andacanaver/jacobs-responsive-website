@@ -177,8 +177,7 @@ header span {
 /*------------ MAIN ----------------*/
 
 #portfolio .content-wrapper {
-    display: flex;
-    flex-flow: column;
+    height: 500px;
 }
 #portfolio img {
     width: 100%;
@@ -198,7 +197,7 @@ header span {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 110%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -213,6 +212,9 @@ header span {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+.prev {
+  left: 0;
+}
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
@@ -221,16 +223,17 @@ header span {
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+  top: 80%;
+  left: 45%;
+  width: 50%;
+  text-align: justify;
 }
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  top: 525px;
 }
 .dot {
   cursor: pointer;
@@ -449,7 +452,7 @@ footer {
     #tagline {
         font-size: 1.8em;
     }
-    #portfolio .content-wrapper {
+    /*#portfolio .content-wrapper {
         flex-flow: row wrap;
         width: 100%;
         margin: 20px 0;
@@ -457,7 +460,7 @@ footer {
         border-bottom: 1px solid #f70074;
         justify-content: center;
         align-items: center;
-    }
+    }*/
     .port-div {
         width: 40%;
         justify-content: flex-end;
