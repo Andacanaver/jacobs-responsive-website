@@ -33,8 +33,8 @@
                 <div class="half-width">
                     <nav>
                         <ul>
-                            <li><a href="https://moeswebservice.com/blog">blog</a></li>
-                            <li><a href="#portfolio">portfolio</a></li>
+                            <li><a href="https://moeswebservice.com/homepage">blog</a></li>
+                            <li><a href="/portfolio.html">portfolio</a></li>
                             <li><a href="#about">about</a></li>
                             <li><a href="#contact">contact</a></li>
                         </ul>
@@ -47,48 +47,57 @@
         </header>
         
         <section id="portfolio">
-            <div class="content-wrapper-h2">
-                <h2>my portfolio</h2>
+           <div class="content-wrapper">
+                <div class="content-wrapper-h2">
+                    <h2>my portfolio</h2>
+                </div>
+                <br>
+                <div class="slidshow-container">
+                    <div class="my-slides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <a href="rogue-pickings/index.html"><img src="/img/rogue-pickings-screenshot.png"
+                                alt="rouge pickings thumbnail"></a>
+                        <div class="text">
+                            <h3>Rogue Pickings Website</h3>
+                            <p>HTML &amp; CSS from Photoshop Design Comp</p><br>
+                            <p>This is a website that I built using a design comp. It was my second static page that I built. Not all of
+                                the links
+                                work on it as I don't have all the information for them.</p>
+                        </div>
+                    </div>
+                    <div class="my-slides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <a href="jubilee-austen/index.html"><img src="img/jubilee-austen-screenshot.png" alt="jubilee austen thumbnail">
+                        </a>
+                        <div class="text">
+                            <h3>Jubilee Austen Project</h3>
+                            <p>HTML 5 &amp;CSS Website</p><br>
+                            <p>This was my very first website that I built after I learned HTML &amp; CSS.</p>
+                        </div>
+                    </div>
+                    <div class="my-slides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <a href="holistee-manifesto/Index.html"><img src="img/holestee-manifest-thumbnail.png" alt="holstee manifesto thumbnail"
+                                id="hol-man">
+                        </a>
+                        <div class="text">
+                            <h3>Holstee Manifesto</h3>
+                            <p>HTML 5 &amp; CSS Exercise</p><br>
+                            <p>This was an excerise in using HTML 5 &amp; CSS. It is a very basic site that I built and it will remind
+                                me of the things I want to accomplish in my new career.</p>
+                        </div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+           </div>
+            <br>
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-            <div class="content-wrapper">
-                <div class="img-div">
-                    <a href="rogue-pickings/index.html"><img src="img/rogue-pickings-screenshot.png" alt="rogue pickings thumbnail" id="rogue"></a>
-                </div>
-                <div class="port-div">
-                    <article>
-                        <h3>Rogue Pickings Website</h3>
-                        <p>HTML &amp; CSS from Photoshop Design Comp</p><br>
-                        <p>This is a website that I built using a design comp. It was my second static page that I built. Not all of the links work on it as I don't have all the information for them.</p>
-                    </article>
-                </div>
-            </div>
-            <div class="content-wrapper" id="jubilee">
-                <div class="img-div">
-                    <a href="jubilee-austen/index.html"><img src="img/jubilee-austen-screenshot.png" alt="jubilee austen thumbnail" >
-                    </a>
-                </div>
-                <div class="port-div">
-                    <article>
-                        <h3>Jubilee Austen Project</h3>
-                        <p>HTML 5 &amp;CSS Website</p><br>
-                        <p>This was my very first website that I built after I learned HTML &amp; CSS.</p>
-                    </article>
-                </div>
-                
-            </div>
-            <div class="content-wrapper">
-                <div class="img-div">
-                    <a href="holistee-manifesto/Index.html"><img src="img/holstee-manifesto.png" alt="holstee manifesto thumbnail" id="hol-man">
-                    </a>
-                </div>
-                <div class="port-div">
-                    <article id="hol-man-art">
-                        <h3>Holstee Manifesto</h3>
-                        <p>HTML 5 &amp; CSS Exercise</p><br>
-                        <p>This was an excerise in using HTML 5 &amp; CSS. It is a very basic site that I built and it will remind me of the things I want to accomplish in my new career.</p>
-                    </article>
-                </div>
-            </div>
+            
         </section>
         <section id="about">
             <div class="content-wrapper">
@@ -104,8 +113,7 @@
                 <h2>let's connect</h2>
                 <div class="contact-content">
                     <h3>Hire me</h3>
-                    <p>218-244-4890<br>
-                    <a href="mailto:moe.jacobw@gmail.com">moe.jacobw@gmail.com</a></p>
+                    <p><a href="mailto:moe.jacobw@gmail.com">moe.jacobw@gmail.com</a></p>
                 </div>
                 <div class="contact-content">
                     <h3>Follow me</h3>
@@ -125,7 +133,7 @@
         <footer>
             <p>Copyright 2019 | Jacob Moe</p>
         </footer>
-    </body>
+    
     
     
     
