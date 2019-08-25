@@ -303,6 +303,12 @@ header span {
     opacity: 1
   }
 }
+#project-link {
+  color: aliceblue;
+}
+#project-link:hover {
+  color: aqua;
+}
 
 /*-----------ABOUT --------------*/
 
@@ -369,6 +375,13 @@ header span {
   display: flex;
 }
 
+/*-----------SERVICES--------------*/
+.font-awesome-icon {
+  color: white;
+}
+.service-wrapper {
+  text-align: center;
+}
 
 
 
@@ -501,10 +514,12 @@ footer {
 
   #portfolio img {
     width: auto;
+
   }
 
   #portfolio .img-div {
     text-align: center;
+
   }
 
   #about {
@@ -517,7 +532,7 @@ footer {
 
   /*-----Slideshow------*/
   #portfolio .content-wrapper {
-    height: 800px;
+    height: 850px;
   }
 
   .slideshow-container {
@@ -525,7 +540,7 @@ footer {
   }
 
   .my-slides img {
-    margin-left: 20%;
+    margin-left: 15%;
   }
 
   .prev,
@@ -539,7 +554,7 @@ footer {
   }
 
   .text {
-    top: 140%;
+    top: 95%;
     left: 25%;
     width: 50%;
   }
@@ -547,6 +562,11 @@ footer {
   .active,
   .dot:hover {
     background-color: #717171;
+  }
+
+  .services-desc {
+    width: 70%;
+    margin: 0 auto;
   }
 
 }
@@ -632,6 +652,33 @@ footer {
   #portfolio article {
     width: 49%;
   }
+/*--------------------SERVICES-----------------------*/
+
+  #services {
+    height: 450px;
+  }
+  #services .service-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  #services h2 {
+    width: 70%;
+  }
+  #services article {
+    flex-basis: 33%;
+    flex-direction: column;
+  }
+  #services i {
+    margin-bottom: 20px;
+    font-size: 3.5em;
+  }
+  .para {
+    padding-top: 30px;
+  }
+
+
 
 }
 
