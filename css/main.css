@@ -303,11 +303,11 @@ header span {
     opacity: 1
   }
 }
-#project-link {
-  color: aliceblue;
+#project-link, .git-repo {
+  color: aquamarine;
 }
-#project-link:hover {
-  color: aqua;
+#project-link:hover, .git-repo:hover {
+  color: aqua; 
 }
 
 /*-----------ABOUT --------------*/
