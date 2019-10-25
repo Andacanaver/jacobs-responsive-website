@@ -355,7 +355,9 @@ header span {
 .project-content {
   display: flex;
   width: 100%;
-  margin: 20px;
+  margin: 20px 0;
+  flex-flow: column wrap;
+  align-items: center;
 }
 
 .project-desc {
@@ -363,9 +365,10 @@ header span {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 100%;
   border: 1px solid #f70074;
   padding: 0 25px;
+  margin-bottom: 20px;
 }
 
 .project-img {
