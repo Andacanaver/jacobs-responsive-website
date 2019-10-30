@@ -189,9 +189,7 @@ header span {
 
 /*------------ MAIN ----------------*/
 /*-----Slideshow-----*/
-#portfolio .content-wrapper {
-  height: 900px;
-}
+
 
 #portfolio img {
   width: 100%;
@@ -201,108 +199,20 @@ header span {
 #portfolio h3 {
   text-align: center;
 }
-
-.slideshow-container {
-  max-width: 700px;
-  position: relative;
-  margin: auto;
-}
-
-.my-slides {
-  display: none;
-}
-
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 150%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev {
-  left: 0;
-}
-
-.prev:hover,
-.next:hover {
-  background-color: rgba(, 0, 0, 0.8);
+.project-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .text {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
-  position: absolute;
-  top: 140%;
-  left: 15%;
-  width: 75%;
   text-align: center;
 }
 
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 525px;
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
-}
 #project-link, .git-repo {
   color: aquamarine;
 }
@@ -316,7 +226,8 @@ header span {
   background: url("../img/about-me.png") center;
   background-size: cover;
   width: 100%;
-  height: 900px;
+  height: auto;
+  padding-bottom: 60px;
 }
 
 #about p {
@@ -516,63 +427,30 @@ footer {
     padding: 0 30px;
   }
 
-  #portfolio img {
+  .half-width {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+  }
+  #portfolio img{
     width: auto;
-
   }
-
-  #portfolio .img-div {
-    text-align: center;
-
-  }
-
-  #about {
-    height: 550px;
-  }
-
-  #about p {
-    width: 85%;
-  }
-
-  /*-----Slideshow------*/
-  #portfolio .content-wrapper {
-    height: 850px;
-  }
-
-  .slideshow-container {
-    max-width: 700px;
-  }
-
-  .my-slides img {
-    margin-left: 15%;
-  }
-
-  .prev,
-  .next {
-    top: 110%;
-  }
-
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
   .text {
-    top: 95%;
-    left: 25%;
-    width: 50%;
+    width: 75%;
   }
-
-  .active,
-  .dot:hover {
-    background-color: #717171;
+  #about {
+    height: auto;
   }
 
   .services-desc {
     width: 70%;
     margin: 0 auto;
   }
-
+  .font-awesome-icon {
+    font-size: 3em;
+  }
 }
 
 
@@ -601,66 +479,15 @@ footer {
     font-size: 1.8em;
   }
 
-  /*-------Slideshow------*/
-
-  #portfolio .content-wrapper {
-    height: 500px;
-  }
-
-  .slideshow-container {
-    max-width: 1000px;
-  }
-
-  .my-slides img {
-    margin-left: 0%;
-  }
-
-  .prev,
-  .next {
-    top: 110%;
-  }
-
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
-  .text {
-    top: 80%;
-    left: 45%;
+  .half-width {
     width: 50%;
   }
-
-  .active,
-  .dot:hover {
-    background-color: #717171;
-  }
-
-
-
-
-  .port-div {
-    width: 40%;
-    justify-content: flex-end;
-    align-items: center;
-    padding-left: 20px;
-  }
-
-  .img-div {
-    flex-direction: row;
-    width: 49%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #portfolio article {
-    width: 49%;
+  .full-width {
+    display: flex;
+    margin: 10px auto;
   }
 /*--------------------SERVICES-----------------------*/
 
-  #services {
-    height: 450px;
-  }
   #services .service-wrapper {
     display: flex;
     justify-content: center;
@@ -682,7 +509,11 @@ footer {
     padding-top: 30px;
   }
 
-
+/*--------Projects------------*/
+  .project-content {
+    display: flex;
+    flex-flow: row;
+  }
 
 }
 
