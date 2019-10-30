@@ -52,11 +52,12 @@
                     <h2>my portfolio</h2>
                 </div>
                 <br>
-                <div class="slidshow-container">
-                    <div class="my-slides fade">
-                        <div class="numbertext">1 / 4</div>
-                        <a href="https://andacanaver.github.io/quiz-app-wireframe/" target="_blank"><img src="img/quiz-app.png" alt="Quiz app thumbnail"></a>
-                        <div class="text">
+                <div class="project-container">
+                    <div class="full-width">
+                        <div class="my-img half-width">
+                            <a href="https://andacanaver.github.io/quiz-app-wireframe/" target="_blank"><img src="img/quiz-app.png" alt="Quiz app thumbnail"></a>
+                        </div>
+                        <div class="text half-width">
                             <h3>Quiz App</h3>
                             <p>Javascript/jQuery Quiz App</p><br>
                             <p>This is a small quiz app that I built with jQuery and Javascript for learning in my bootcamp. </p>
@@ -64,11 +65,13 @@
                                 <h3 class="git-repo">GitHub Repo</h3>
                             </a>
                         </div>
+
                     </div>
-                    <div class="my-slides fade">
-                        <div class="numbertext">2 / 4</div>
-                        <a href="rogue-pickings/index.html"><img src="img/rogue-pickings-screenshot.png" alt="rouge pickings thumbnail"></a>
-                        <div class="text">
+                    <div class="full-width">
+                        <div class="my-img half-width">
+                            <a href="rogue-pickings/index.html"><img src="img/rogue-pickings-screenshot.png" alt="rouge pickings thumbnail"></a>
+                        </div>
+                        <div class="text half-width">
                             <h3>Rogue Pickings Website</h3>
                             <p>HTML &amp; CSS from Photoshop Design Comp</p><br>
                             <p>This is a website that I built using a design comp. It was my second static page that I built. Not all of
@@ -79,11 +82,12 @@
                             </a>
                         </div>
                     </div>
-                    <div class="my-slides fade">
-                        <div class="numbertext">3 / 4</div>
-                        <a href="jubilee-austen/index.html"><img src="img/jubilee-austen-screenshot.png" alt="jubilee austen thumbnail">
-                        </a>
-                        <div class="text">
+                    <div class="full-width">
+                        <div class="my-img half-width">
+                            <a href="jubilee-austen/index.html"><img src="img/jubilee-austen-screenshot.png" alt="jubilee austen thumbnail">
+                            </a>
+                        </div>
+                        <div class="text half-width">
                             <h3>Jubilee Austen Project</h3>
                             <p>HTML 5 &amp;CSS Website</p><br>
                             <p>This was my very first website that I built after I learned HTML &amp; CSS.</p>
@@ -92,11 +96,12 @@
                             </a>
                         </div>
                     </div>
-                    <div class="my-slides fade">
-                        <div class="numbertext">4 / 4</div>
-                        <a href="holistee-manifesto/Index.html"><img src="img/holestee-manifest-thumbnail.png" alt="holstee manifesto thumbnail" id="hol-man">
-                        </a>
-                        <div class="text">
+                    <div class="full-width">
+                        <div class="my-img half-width">
+                            <a href="holistee-manifesto/Index.html"><img src="img/holestee-manifest-thumbnail.png" alt="holstee manifesto thumbnail" id="hol-man">
+                            </a>
+                        </div>
+                        <div class="text half-width">
                             <h3>Holstee Manifesto</h3>
                             <p>HTML 5 &amp; CSS Exercise</p><br>
                             <p>This was an excerise in using HTML 5 &amp; CSS. It is a very basic site that I built and it will remind
@@ -106,21 +111,12 @@
                             </a>
                         </div>
                     </div>
-                    <a class="prev" onclick="plusSlides(-1)" tabindex="0">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)" tabindex="0">&#10095;</a>
                 </div>
             </div>
             <br>
             <a href="portfolio.html">
                 <h3 id="project-link">View More Projects</h3>
             </a>
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-            </div>
-
         </section>
         <section id="about">
             <div class="content-wrapper">
@@ -175,8 +171,8 @@
         window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
     </script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
+    <!--Took script out slideshow wasn't working like expected
+    <script src="js/main.js"></script>-->
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
         window.ga = function() {
