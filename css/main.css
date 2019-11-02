@@ -537,6 +537,7 @@ footer {
     #about > .content-wrapper {
         display: flex;
         flex-flow: row wrap;
+        align-items: flex-start;
     }
 
     #about > .content-wrapper > .half-width {
