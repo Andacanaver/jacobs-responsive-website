@@ -331,7 +331,7 @@ header span {
 #services {
     background: url("../img/web-services.jpeg") center;
     background-size: cover;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     background-color: aquamarine;
 }
 
