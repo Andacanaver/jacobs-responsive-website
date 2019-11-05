@@ -495,6 +495,8 @@ footer {
     }
     header nav ul {
         justify-content: center;
+        flex-flow: row wrap;
+        font-size: 1em;
     }
 
     header nav ul li {
@@ -556,6 +558,7 @@ footer {
     }
     header nav ul {
         flex-flow: row wrap;
+        font-size: 1em;
     }
     header nav ul li {
         padding: 0 20px;
